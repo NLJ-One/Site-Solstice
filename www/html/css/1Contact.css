@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff6e5;
+    color: #333;
+}
+
+header {
+    background-color: #FFE8A3;
+    height: 80px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #F4661B;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.logo-item img {
+    height: 50px;
+    margin: 0 10px;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .logo-item img {
+        height: 40px;
+    }
+}
+
+
+main {
+    background-image: url(/images/image.png);
+    background-size: contain;
+}
+
+#Insta {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#Insta img {
+    width: 10%;
+    transform: scale(1);
+    transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+#Insta img:hover {
+    transform: scale(1.2);
+    filter: brightness(0.7);
+}
+
+.main-contact {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.main-contact h1 {
+    font-size: 2rem;
+    color: #BF6A02;
+}
+
+.main-contact h1,
+label {
+    font-family: 'BaksoSapi', sans-serif;
+}
+
+.main-contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #BF6A02
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    color: #BF6A02
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #BF6A02;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-color: #BF6A02;
+    color: #BF6A02;
+    text-align: left;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.contact-form button {
+    background-color: #FFE8A3;
+    color: #BF6A02;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: #BF6A02;
+}

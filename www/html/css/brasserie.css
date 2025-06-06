@@ -1,0 +1,116 @@
+/* Ton code existant (header, nav, etc.) reste inchangé ici */
+
+body {
+  background-color: #fff4e4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4a1f00;
+}
+
+main{
+  background-image: url(/images/image.png);
+  background-size: contain;
+}
+/* Présentation */
+#presentation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5%;
+  gap: 40px;
+  align-items: center;
+}
+
+#presentation .text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#presentation .text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+#presentation img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.animated-img {
+  animation: slidein 2s ease-out forwards;
+}
+
+/* Galerie */
+#galerie {
+  padding: 5%;
+  background-color: #fff0d2;
+}
+
+#galerie h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.grid-galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.grid-galerie img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 280px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.grid-galerie img:hover {
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes slidein {
+  0% {
+    margin-left: 100%;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0%;
+    opacity: 1;
+  }
+}
+
+.etape {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+
+
+.presentation img {
+  width: 25%;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.texte-etape {
+  flex: 1;
+}
+
+.texte-etape h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #a55200;
+}
+
+.texte-etape p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
