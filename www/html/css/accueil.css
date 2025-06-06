@@ -211,61 +211,26 @@ a {
   background-size: contain;
 }
 
-form label {
-  display: block;
-  margin-top: 15px;
-  color: #6a2a00;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 2px solid #9e4000;
-  border-radius: 8px;
-  font-size: 1em;
-  background-color: rgb(255, 244, 216);
-}
-
-button {
-  margin-top: 20px;
-  padding: 12px;
-  width: 100%;
-  border: none;
-  background-color: #9e4000;
-  color: white;
-  font-size: 1em;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #fff700;
-  color: black;
-}
-
-#PI3 {
-  grid-template-columns: 1fr 1fr;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-}
 #PI3 h1{
-  font-family: 'Persona', sans-serif;
-  color: rgb(134, 36, 0);
+  text-align: center;
+  font-family: 'BaksoSapi', sans-serif;
+  color: #6a2a00;
+  padding: 3%;
 }
 
-#PI3 label{
-   font-family: 'BaksoSapi', sans-serif;
-   color: rgb(134, 36, 0);
+.video-container {
+  position: relative;
+  width: 120%;
+  max-width: 1300px;
+  margin: 20px auto;
+  padding: 0 10px;
 }
 
-#bf {
-  width: 40%;
-  transform: rotate(15deg);
-  margin: 11%
+.video-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 
@@ -442,3 +407,4 @@ h3 a:hover {
     height: 50px;
   }
 }
+
