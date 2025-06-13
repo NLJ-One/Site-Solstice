@@ -1,0 +1,293 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff6e5;
+  color: #333;
+}
+
+button a {
+  color: white;
+}
+
+#beer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+#titre {
+  padding: 3%;
+  text-align: center;
+  font-family: 'Persona', sans-serif;
+  color: #7e2003;
+  font-size: 2.3rem
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .logo-item img {
+    height: 40px;
+  }
+}
+
+main {
+  background-image: url(public/public/images/fondsol.png);
+  background-size: contain;
+}
+
+.biere-section {
+  padding: 2%;
+  background-color: #f9f9f9;
+  margin: 4%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  vertical-align: top;
+  align-items: center;
+  flex-direction: column;
+  width: 20%;
+  box-sizing: border-box;
+  transition: transform 0.4s ease-in-out;
+  transform: scale(1);
+
+}
+
+.biere-section:hover {
+  transform: scale(1.08);
+}
+
+.biere-section img {
+  width: 50%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(-10deg);
+}
+
+.biere-section img:hover {
+  transform: scale(1.06);
+}
+
+.biere-section h2 {
+  color: #d9531e;
+  font-size: 22px;
+  font-family: 'BaksoSapi', sans-serif;
+}
+
+.biere-section p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.biere-section .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.biere-section button {
+  background-color: #d9531e;
+  color: white;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 40%;
+  transition: background-color 0.3s ease-in-out;
+  font-family: 'BaksoSapi', sans-serif;
+}
+
+.biere-section button:hover {
+  background-color: #7e2003;
+}
+
+
+#beer>h2 {
+  flex: 0 0 180px;
+  color: #d9531e;
+  margin: 0;
+  font-size: 28px;
+  font-family: 'Persona', sans-serif;
+}
+
+.biere-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#biere-orange {
+  box-shadow: 0px 5px 21px rgba(255, 115, 0, 0.62);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#biere-orange:hover {
+  box-shadow: 80px 39px 93px rgba(255, 115, 0, 0.72)
+}
+
+
+#biere-cerise {
+  box-shadow: 0px 5px 21px rgba(201, 0, 134, 0.62);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#biere-cerise:hover {
+  box-shadow: 80px 39px 93px rgba(201, 0, 134, 0.72);
+
+}
+
+
+#biere-passion {
+  box-shadow: 0px 5px 21px rgba(255, 181, 54, 0.62);
+
+}
+
+#biere-passion:hover {
+  box-shadow: 80px 39px 93px rgba(255, 181, 54, 0.72);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+#biere-noix {
+  box-shadow: 0px 5px 21px rgba(88, 41, 0, 0.62);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#biere-noix:hover {
+  box-shadow: 80px 39px 93px rgba(88, 41, 0, 0.72);
+
+}
+
+#biere-pomme {
+  box-shadow: 0px 5px 21px rgba(45, 208, 0, 0.62);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+}
+
+#biere-pomme:hover {
+  box-shadow: 80px 39px 93px rgba(45, 208, 0, 0.72);
+
+}
+
+#collab h2 {
+  color: #d9531e;
+  text-align: center;
+  font-size: 28px;
+  margin: 4%;
+  font-family: 'Persona', sans-serif;
+}
+
+
+.voir-plus {
+  font-family: 'Basko', sans-serif;
+  color: #7e2003;
+  cursor: pointer;
+}
+
+.voir-plus:hover {
+  color: #e99f00;
+  text-decoration: underline;
+}
+
+#coffrets-beer h2 {
+  color: #d9531e;
+  text-align: center;
+  font-size: 28px;
+  margin: 2%;
+  font-family: 'Persona', sans-serif;
+}
+
+#coffrets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.coffret {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 6px 14px 10px rgb(140 70 0 / 54%);
+  padding: 15px;
+  width: calc(33% - 13.333px);
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.coffret:hover {
+  transform: scale(1.03);
+}
+
+.coffret img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.coffret img:hover {
+  transform: scale(1.01);
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.coffret button {
+  background-color: #d9531e;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+  font-family: 'BaksoSapi', sans-serif;
+}
+
+.coffret button:hover {
+  background-color: #7e2003;
+}
+
+
+#cci {
+  width: 65%;
+}
+
+#collaborations {
+  padding: 2%;
+  background-color: #f9f9f9;
+  margin: 4%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  vertical-align: top;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1);
+}
+
+#collaborations p {
+  padding: 2%;
+}
+
+#collaborations:hover {
+  transform: scale(1.03);
+}

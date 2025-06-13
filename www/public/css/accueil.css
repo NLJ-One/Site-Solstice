@@ -1,0 +1,411 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'BaksoSapi';
+  src: url('../Police/BaksoSapi.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Persona';
+  src: url('../Police/Persona\ Aura.otf') format('opentype');
+}
+
+body {
+  background-color: #fff4e4;
+}
+
+h3 a {
+  text-decoration: none;
+  color: #8e0000;
+}
+
+nav {
+  background-color: rgb(255, 247, 201);
+  border-bottom: #6a2a00 solid 5px;
+  font-family: 'BaksoSapi', sans-serif;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav li {
+  background-color: rgb(169, 45, 0);
+  color: rgb(255, 243, 189);
+  border-radius: 5px;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+}
+
+nav li:hover {
+  background-color: rgb(65, 17, 0);
+  transition: transform 0.3s ease;
+  transform: scale(1.2);
+}
+
+nav {
+  padding: 1%;
+}
+
+
+nav img {
+  width: 35%;
+  transform: scale(1);
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+#Slogo{
+    transform: scale(1);
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+#Slogo:hover {
+  transform: scale(1.1);
+  filter: saturate(1.6);
+}
+
+#panier {
+  object-fit: cover;
+  margin-right: 15px
+}
+
+body{
+  background-image: url("../images/fondsol.png");
+  background-size: contain;
+}
+#fondo {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 150%;
+  height: 150%;
+  opacity: 0.2;
+  z-index: -1;
+  pointer-events: none;
+  object-fit: cover;
+}
+
+#PI1 {
+  display: flex;
+  padding: 5%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+#PI1_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+#PI1 img {
+  width: 16%;
+  transform: rotate(-10deg);
+}
+
+#imgac {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 100%;
+  }
+
+  80% {
+    margin-left: 0%;
+  }
+}
+
+#PI1 h1 {
+  font-family: 'Persona', sans-serif;
+  color: rgb(255, 140, 0);
+}
+
+#PI1 h2,
+h3 {
+  font-family: 'BaksoSapi', sans-serif;
+}
+
+#PI1 h1,
+h2,
+h3 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+.bouton {
+  background-color: white;
+  border-radius: 20px;
+  width: 60%;
+  height: 30px;
+}
+
+#PI2 {
+  padding-top: 3%;
+  background-color: white;
+}
+
+#PI2 h1,
+h3 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+#PI2 a {
+  color: #6a2a00;
+}
+
+#PI2 a:hover {
+  color: #b44800;
+}
+
+#PI2 img {
+  display: flex;
+  margin: auto;
+      width: 70%;
+    padding: 5%;
+}
+
+#PI2 h1 {
+  font-family: 'BaksoSapi', sans-serif;
+}
+
+.contact {
+  max-width: 1000px;
+  padding: 10%;
+}
+
+#PI3 {
+  background-image: url(../images/fondsol.png);
+  background-size: contain;
+}
+
+#PI3 h1{
+  text-align: center;
+  font-family: 'BaksoSapi', sans-serif;
+  color: #6a2a00;
+  padding: 3%;
+}
+
+.video-container {
+  position: relative;
+  width: 120%;
+  max-width: 1300px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+
+.footer {
+  background-color: #ffe4a1;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  align-items: center;
+}
+
+
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.footer-links ul li {
+  margin-bottom: 5px;
+
+}
+
+footer h3 a {
+  text-decoration: none;
+  list-style-type: none;
+  color: rgb(102, 39, 0);
+  font-family: 'BaksoSapi', sans-serif;
+}
+
+h3 a {
+  transform: scale(1);
+  transition: transform 0.4s ease;
+}
+
+h3 a:hover {
+  transform: scale(1.5);
+  color: #b44800;
+
+}
+
+
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.footer-logo {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+
+.footer-logo img {
+  height: 130px;
+  margin: auto;
+}
+
+.footer-logo {
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+
+.footer-logo:hover {
+  transform: scale(1.2);
+  filter: saturate(1.6);
+}
+
+@media (max-width: 400px) {
+  nav li{
+        width: 70px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 200px) {
+   nav li{
+        width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  header {
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav ul li a {
+    padding: 8px 16px;
+    font-size: 0.95em;
+  }
+
+  .logo-item img {
+    height: 40px;
+  }
+
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
+  }
+
+  #pagee {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  #pagee img {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .nom h1 {
+    text-align: center;
+    font-size: 1.8em;
+  }
+
+
+
+  .prix p {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-logo img {
+    height: 50px;
+  }
+}
+
